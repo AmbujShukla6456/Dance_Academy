@@ -1,0 +1,212 @@
+extends base.pug
+
+block style 
+    style 
+        include ../static/style.css 
+    style.
+        body {
+                background-image:url("./static/bgj.jfif");
+                background-size: cover ;
+                background-repeat:no-repeat;
+        }
+        #block{
+            margin:40px 80px 20px 80px;
+            width:1300px;
+            height: 550px;
+            display:flex;
+            flex-direction:row;
+            border-radius:3px;
+        }   
+        #form{
+            width:800px;
+            background-color:white;
+        }
+        #head{
+            width:800px;
+            text-align: center;
+            text-decoration: underline;
+            margin-top:7px;
+            font-size:25px;
+            font-weight:bold;
+        }
+        #CTA{    
+            content: "";
+            width:500px;
+            height: 550px;
+            background-image:url('./static/dbg.jfif');
+            background-size: cover ;
+            opacity:0.7;
+        }
+        .co{
+            margin-left:80px;
+            margin-top:100px;
+            color:rgba(255,255,255,1);
+            position:relative;
+            font-size:50px;
+            font-weight:bold;
+        }
+        #form input{
+            border:0;
+            border-bottom:3px solid black;
+            outline:none;
+        }
+        #name{
+            padding-top:30px;
+        }
+        #form h3{
+            padding-left:100px;
+        }
+        .nt{
+            padding-top:10px;
+            margin-left: 20px;
+            display:flex;
+            justify-content:center;
+        }
+        .nt input{
+            width:170px;
+            margin-right:100px;
+        }
+        #email{
+            margin-top:30px;
+        }
+        .et{
+            padding-top:10px;
+            margin-left: 140px;
+            display:flex;
+            justify-content:flex-start;
+        }
+        .et input{
+            width:300px;
+            margin-right:100px;
+        }
+        #add{
+            margin-top:30px;
+        }
+        .at{
+            padding-top:10px;
+            margin-left: 140px;
+            display:flex;
+            justify-content:flex-start;
+        }
+        .at input{
+            width:300px;
+            margin-right:100px;
+        }
+        #gen{
+            margin-top:30px;
+        }
+        .gt{
+            padding-top:10px;
+            margin-left: 140px;
+            display:flex;
+            justify-content:flex-start;
+        }
+        .gt input{
+            margin-top:3px;
+        }
+        .selec{
+            display: flex;
+            flex-direction:row;
+        }
+        #agesty{
+            margin-top:30px;
+            display:flex;
+            flex-direction:row;
+        }
+        .agt{
+            padding-top:10px;
+            margin-left: 140px;
+            display:flex;
+            justify-content:flex-start;
+        }
+        .age{
+            margin-right:80px;
+        }
+        style{
+            padding-left:100px;
+        }
+        .sgt{
+            padding-top:10px;
+            margin-left: 140px;
+            display:flex;
+            justify-content:flex-start;
+        }
+        .sgt select{
+            width:150px;
+            border:0;
+            border-bottom:3px solid black;
+            outline: none;
+        }
+        .btn{
+            margin-top:30px;
+            display:flex;
+            justify-content:center;
+        }
+        .btn button {
+            border-radius: 999px;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            opacity: 1;
+            outline: 0 solid transparent;
+            padding: 8px 18px;
+            border: 0;
+            width:150px;
+            background: #5E5DF0;
+            border-radius: 999px;
+            box-shadow: #5E5DF0 0 10px 20px -10px;
+        }
+block content
+        section#block 
+            section#form
+                div#head 
+                    h1 Application Form
+                form(action="/join",method="post")#form
+                    div#name
+                        h3 Name: 
+                        div.nt 
+                            input(name="Fname",type="text" , placeholder="First Name")
+                            input(name="Lname",type="text" , placeholder="Last Name")
+                    div#email
+                        h3 E-Mail: 
+                        div.et 
+                            input(name="email",type="text" , placeholder="E-Mail Address")     
+                    div#add
+                        h3 Address: 
+                        div.at 
+                            input(name="add",type="text" , placeholder="Address")
+                    div#gen
+                        h3 Gender:
+                        div.selec 
+                            div.gt
+                                input(type='radio', name='gender', value='male') 
+                                | Male
+                            div.gt
+                                input(type='radio', name='gender', value='female') 
+                                | Female
+                            div.gt
+                                input(type='radio', name='gender', value='other') 
+                                | Other
+                    div#agesty
+                        div.age    
+                            h3 Age: 
+                            div.agt 
+                                input(name="age",type="number" )
+                        div.style 
+                            h3 Style: 
+                            div.sgt 
+                                select(name="style")
+                                    option(value="classical") Classical
+                                    option(value="hiphop") Hip Hop
+                                    option(value="ballet") Ballet
+                                    option(value="modern") Modern
+                                    option(value="ballroom") Ballroom
+                                    option(value="break") Break
+                    div.btn 
+                        button(type="submit") Submit
+
+            section#CTA
+                div.co
+                    h1 START YOUR JOURNEY TODAY

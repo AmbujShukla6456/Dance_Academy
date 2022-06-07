@@ -1,0 +1,100 @@
+extends base.pug
+
+block script 
+    script(src='/static/script.js')
+block style
+    style 
+        include ../static/style.css 
+    style.
+        body {
+            background-image: url("./static/bga.jfif");
+            background-size:cover;
+        }
+        #about{
+            border:1px solid;
+            box-shadow:15px 10px 30px black;    
+            border-radius:5px;
+            margin:25px;
+            margin-bottom:46px;
+            background-color: rgb(224 189 189);
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            text-align : center;
+        }
+        h1{
+            font-weight :bold;
+            font-size: 30px;
+        }
+        #info{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+            margin-top:10px;
+            margin-bottom:34px;
+        }
+        .add{
+            border:1px solid;
+            box-shadow:15px 10px 30px black;
+            width:500px;
+            border-radius:5px;
+            margin:25px;
+            margin-left:75px;
+            margin-top: 35px;
+            background-color:#caf5f5;
+        }
+        .add h1{
+            text-align: center ;
+            margin-bottom:10px;
+        }
+        .ele{
+            display:flex;
+            flex-direction:row ;
+            margin-bottom:10px;
+            margin-left:20px;
+        }
+        .con{
+            border:1px solid;
+            box-shadow:15px 10px 30px black;
+            width:500px;
+            border-radius:5px;
+            margin:25px;
+            margin-left:75px;
+            margin-top: 35px;
+            background-color: #caf5f5;
+        }
+        .con h1{
+            text-align: center ;
+            margin-bottom:10px;
+        }
+        .e{
+            margin-bottom:10px;
+            margin-left:20px;
+        }
+block content
+        section#bod
+            section#about
+                    h1 About Us
+                    p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis fugit amet vitae, facere expedita quidem tenetur sapiente dolorem minus saepe deserunt odit laudantium id nisi voluptas quas veritatis cum odio, ad autem, molestias beatae consectetur earum! Omnis dignissimos qui, sint totam maxime placeat voluptates! Dignissimos repellat officia aperiam delectus reiciendis! Itaque in dicta amet repellat. Consequatur magnam ullam iste tempora similique vel! Magni suscipit corporis, quidem quam quaerat quo. Expedita fugit earum tempore eveniet omnis hic dicta pariatur, deleniti reiciendis corporis, et sit? Magnam minus quaerat similique delectus consequatur beatae veritatis perspiciatis atque exercitationem, ullam quos soluta explicabo labore velit voluptatem. Dicta voluptate vero tempora, possimus itaque quod, consequuntur quam sunt necessitatibus nesciunt soluta? Repellendus distinctio voluptas adipisci dicta doloribus id. Perferendis ad ipsam cupiditate asperiores expedita. Sint praesentium commodi dignissimos nulla tempora numquam minus, itaque magni delectus aliquam a vitae eveniet quisquam illum saepe expedita, in aperiam nisi similique at dolore accusamus voluptas dolorum repudiandae! Quo, deleniti officiis dolores autem odit tenetur sed quidem nesciunt velit expedita natus, ducimus, laborum quia deserunt eos asperiores dolorum excepturi reprehenderit praesentium nisi rem laudantium amet quaerat? Minima, error dicta, ab aspernatur assumenda dolor quasi quam laudantium ratione amet expedita, labore aperiam ullam! Culpa, incidunt dicta? Quisquam rerum at cupiditate modi praesentium id ipsum laboriosam maiores aperiam! Repudiandae rerum quisquam nobis consequatur placeat molestias. Maiores et atque omnis ut! Eos aliquam, reprehenderit tempore earum veniam deleniti temporibus optio rem molestiae officiis nulla minus, ducimus itaque magni distinctio inventore dolore maiores minima unde, voluptatum nisi quisquam corrupti quia laborum! Reprehenderit dolorum magnam voluptatum quidem, harum pariatur doloremque dolorem unde corrupti, excepturi omnis aliquam vel modi dicta molestias expedita quam inventore fugit. In quas esse a officiis praesentium aspernatur! Voluptas harum, sit quo, laudantium alias facilis hic maiores officia ab, placeat doloremque modi a.
+    
+            section#info
+                div.add
+                    h1 Address 
+                    h2.ele House Number :
+                        p 4568
+                    h2.ele Block :
+                        p S 
+                    h2.ele Area :
+                        p Rajan Nagar
+                    h2.ele City :
+                        p Delhi
+                
+                div.con
+                    h1 Contact Info 
+                    h2.e  Phone Numbers :
+                        div
+                            p.e 1234567890
+                        div 
+                            p.e 9087654321
+                    h2.e  E-Mail ID :
+                        p.e abcd@gmail.com

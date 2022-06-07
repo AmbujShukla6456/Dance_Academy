@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0%;
+}
+
+#logo {
+  border-radius: 50%;
+  height: 25px;
+  padding-bottom: 2px;
+}
+
+#navbar {
+  display: flex;
+  background-color: rgb(31, 31, 31);
+  padding: 14px;
+  height: 47px;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+#navbar li {
+  color: white;
+  list-style: none;
+}
+
+#h {
+  margin-left: 7px;
+  padding-right: 24vw;
+}
+
+#navbar li a {
+  align-self: center;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+}
+
+#navbar li a:hover {
+  text-shadow: 1px 1px 4px gray;
+  background: azure;
+  color: black;
+}
+
+#introsec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  background-image: url("/static/bg.jpg");
+  background-size: cover;
+  background-position: 0px 25%;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-color: blue;
+}
+#below{
+  background: hsla(184, 20%, 33%, 1);
+
+background: radial-gradient(circle, hsla(184, 20%, 33%, 1) 0%, hsla(221, 32%, 27%, 1) 50%, hsla(248, 86%, 15%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(184, 20%, 33%, 1) 0%, hsla(221, 32%, 27%, 1) 50%, hsla(248, 86%, 15%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(184, 20%, 33%, 1) 0%, hsla(221, 32%, 27%, 1) 50%, hsla(248, 86%, 15%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#436365", endColorstr="#2E3C5A", GradientType=1 );
+  padding-bottom: 25px;;
+}
+.txt {
+  font-size: 25px;
+  padding-bottom: 40px;
+}
+
+#mission {
+  height: 250px;
+}
+
+#goals {
+  text-align: center;
+  font: 2rem sans-serif;
+  font-weight: bold;
+}
+
+#cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.dis {
+  display: flex;
+  margin: 4px;
+  flex-direction: row;
+}
+
+.dis img {
+  height: 150px;
+  width: 100px;
+}
+
+.dis p {
+  padding-top: 10px;
+}
+
+#ig {
+  width: 175px;
+}
+
+.card {
+  box-shadow:7px 7px 15px black;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  height: 200px;
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+#sponsec {
+  box-shadow:7px 7px 15px black;
+  margin: 15px 20px 0px 20px;
+  border-radius: 10px;
+  text-align: center;
+  font: 2rem sans-serif;
+  padding: 15px;
+  font-weight: bold;
+  color: white;
+  height: 300px;
+  background-color: rgb(182, 106, 106);
+}
+
+.theo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.theo img {
+  border-radius: 10px;
+  height: 150px;
+}
+
+#footer {
+  margin-top: none;
+  text-align: center;
+  color: white;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  width:100%;
+  position: fixed;
+  bottom:0;
+}

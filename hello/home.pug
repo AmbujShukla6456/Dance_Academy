@@ -1,0 +1,53 @@
+extends base.pug
+
+block script 
+    script(src='/static/script.js')
+block style
+    style 
+        include ../static/style.css
+    style.
+        #footer{
+              text-align: center;
+              color: white;
+              height: 30px;
+              background-color: rgb(0, 0, 0);
+              position: relative;
+        } 
+        
+block content 
+        section#introsec 
+            div  Welcome To The World Of Dance 
+            div.txt  Dance Your Life Away
+        
+        section#below
+            section#mission
+                div#goals
+                    | Our Goals
+                section#cards
+                    div.card
+                            h3 Competitions
+                            div.dis 
+                                img(src="./static/comp.jpg", alt="")
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ad commodi, dolorum nostrum blanditiis labore autem quisquam. Exercitationem unde, culpa quam quos obcaecati inventore perspiciatis natus debitis? Harum, consequatur soluta?
+                    div.card
+                            h3 Different Styles
+                            div.dis 
+                                img(src="./static/style.jpg", alt="")
+                                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus minus molestiae hic eos eveniet dicta aperiam voluptate quo sint nulla ab officia placeat velit eius quae impedit, magnam accusamus cum!
+                    div.card
+                            h3 ConFidence Builder
+                            div.dis
+                                img(src="./static/confi.png", alt="")#ig
+                                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem minima dicta excepturi deleniti ab hic iusto error aperiam harum quis, tempora fugit, natus reiciendis repellendus nam repudiandae rerum quidem repellat!e
+
+            section#sponsec 
+                | Sponser's Section
+                div.theo
+                    a(href='https://about.google',target='_blank')
+                        img(src=" ./static/client 1.png", alt="")
+                    a(href='https://www.microsoft.com/en-in',target='_blank')
+                        img(src=" ./static/client 2.png", alt="")
+                    a(href='https://www.apple.com/in/',target='_blank')
+                        img(src=" ./static/client 3.png", alt="")
+                    a(href='https://www.lg.com/in',target='_blank')
+                        img(src=" ./static/client 4.png", alt="")

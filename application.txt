@@ -1,0 +1,32 @@
+Applicant Information:
+Name: Ambuj Shukla
+E-MAil: abcd@gmail.com
+Address: undefined
+Gender: male
+Age: 34
+Style: ballroom
+
+Applicant Information:
+Name: archit shukla
+E-MAil: primaltees64@gmail.com
+Address: undefined
+Gender: male
+Age: 44
+Style: modern
+
+Applicant Information:
+Name: Archit Shukla
+E-MAil: SFAASF
+Address: djcjhbdadbfhabdahb
+Gender: other
+Age: 12
+Style: hiphop
+
+Applicant Information:
+Name:  
+E-MAil: 
+Address: 
+Gender: undefined
+Age: 
+Style: classical
+

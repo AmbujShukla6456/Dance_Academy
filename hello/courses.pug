@@ -1,0 +1,131 @@
+extends base.pug 
+
+block style                 
+        style 
+            include ../static/style.css
+        style.
+            #bod{
+                display:flex;
+                flex-direction:row;
+                flex-wrap:wrap;
+                justify-content:space-around;
+                background-image: url("./static/bgc.png");
+                background-size:cover;
+                padding-bottom:15px;
+            }
+            .cds{
+                width:500px;
+                height:200px;
+                border:3px solid black;
+                border-radius:5px;
+                margin-top: 50px;
+                margin-left:80px;
+                text-align:center;
+                box-shadow:15px 10px 30px black;
+                background:transparent;
+                perspective: 1000px;
+            }
+            .inbox {
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  text-align: center;
+                  transition: transform 0.8s;
+                  transform-style: preserve-3d;
+                  border-radius:10px;
+                }
+            .cds:hover .inbox {
+                    transform: rotateX(180deg);
+                }
+            .front, .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                border-radius:5px;
+                }
+            .front{
+                background-color:#bce1ec;
+                text-align:center;
+            }
+            .front h2 {
+                margin-top: 60px;
+                font-size: 50px;
+            }
+            .back{
+                display:flex;
+                flex-direction:row;
+                justify-content:space-around;
+                background-color:#f2f1c8;
+                transform: rotateX(180deg)
+            }
+            .back img{
+                margin-top:25px;
+                margin-left:10px;
+                margin-right:10px;
+                height:150px;
+            }
+            .back p{
+                margin-top:25px;
+            }
+            #footer{
+                margin-top:0px;
+              text-align: center;
+              color: white;
+              height: 30px;
+              background-color: rgb(0, 0, 0);
+              position: relative;
+            }
+
+block content 
+        section#bod 
+            div.cds
+                div.inbox
+                    div.front 
+                        h2 Classical
+                    div.back 
+                        img(src="./static/classical.jfif", alt="")
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, recusandae sit soluta delectus deleniti doloremque nam ipsam ducimus distinctio aliquam accusamus eos quas veniam asperiores debitis hic cum quos veritatis!
+        
+            div.cds
+                div.inbox
+                    div.front 
+                        h2 Hip Hop
+                    div.back 
+                        img(src="./static/hiphop.png", alt="")
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, recusandae sit soluta delectus deleniti doloremque nam ipsam ducimus distinctio aliquam accusamus eos quas veniam asperiores debitis hic cum quos veritatis!
+                    
+            div.cds
+                div.inbox
+                    div.front 
+                        h2 Ballet
+                    div.back 
+                        img(src="./static/ballet.png", alt="")
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, recusandae sit soluta delectus deleniti doloremque nam ipsam ducimus distinctio aliquam accusamus eos quas veniam asperiores debitis hic cum quos veritatis!
+                    
+            div.cds
+                div.inbox
+                    div.front 
+                        h2 Modern
+                    div.back 
+                        img(src="./static/modern.jpg", alt="")
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, recusandae sit soluta delectus deleniti doloremque nam ipsam ducimus distinctio aliquam accusamus eos quas veniam asperiores debitis hic cum quos veritatis!
+                    
+            div.cds
+                div.inbox
+                    div.front 
+                        h2 Ballroom
+                    div.back 
+                        img(src="./static/ballroom.jpg", alt="")
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, recusandae sit soluta delectus deleniti doloremque nam ipsam ducimus distinctio aliquam accusamus eos quas veniam asperiores debitis hic cum quos veritatis!
+                    
+            div.cds
+                div.inbox
+                    div.front 
+                        h2 Break
+                    div.back 
+                        img(src="./static/break.png", alt="")
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, recusandae sit soluta delectus deleniti doloremque nam ipsam ducimus distinctio aliquam accusamus eos quas veniam asperiores debitis hic cum quos veritatis!
+               
+        

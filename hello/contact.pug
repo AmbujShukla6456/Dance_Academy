@@ -1,0 +1,94 @@
+extends base.pug
+
+block style 
+        style 
+            include ../static/style.css
+        style.
+            body {
+                background-image:url("./static/bgcon.jfif");
+                background-size: cover;
+                background-repeat:no-repeat;
+            }
+            .box{
+                margin:auto;
+                margin-top:60px;
+                background:white;
+                height:500px;
+                width:450px;
+                border-radius:3px;
+                box-shadow:4px 4px 20px black;
+            }
+            #head{
+                text-align:center;
+                padding-top:10px;
+            }
+            #intro{
+                text-align:center;
+                padding-top:10px;
+            }
+            #form{
+                height:350px;
+                padding-top: 20px;
+            }
+            .tag{
+                margin: 0px 25px 20px 50px;
+            }
+            .tag h4{
+                margin-bottom:5px;
+            }
+            .tag input{
+                width:350px;
+                border:1px solid black;
+                border-radius:3px;
+                padding:3px;
+            }
+            .tag textarea{
+                border:1px solid black;
+                border-radius:3px;
+                padding-left:3px;
+                padding-top:2px;
+            }
+            .btn button {
+                width:120px;
+                height:40px;
+                border-radius:10px;
+                margin-left:165px;
+                margin-top:0px;
+                cursor: pointer;
+                font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 0 1.6rem;
+                text-align: center;
+                text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+                transition: all .5s;
+                touch-action: manipulation;
+                background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+            }
+            .btn button:hover {
+                box-shadow: rgba(80, 63, 205, 0.5) 5px 5px 10px;
+                transition-duration: .1s;
+            }
+            
+block content 
+        section.box
+            div#head
+                h2 Contact Us
+
+            div#intro
+                p Have a Question? Well message us directly, right now.
+                p We will definetly love to hear it.
+            
+            div#form
+                form(action="/contact",method="post") 
+                    div.tag 
+                        h4 Name   
+                        input(name="name",type="text" , placeholder="Your Name")
+                    div.tag
+                        h4 Email
+                        input(name="email",type="text" , placeholder="Your Email")
+                    div.tag#msg
+                        h4 Message 
+                        textarea(name="message", cols="46", rows="10",placeholder="Your Message")
+                    div.btn 
+                        button(type="submit") Send
